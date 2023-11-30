@@ -5,7 +5,7 @@
 if __name__ == '__main__':
     import sys
 
-    #loop through values and add them
+    # loop through values and add them
     sum = 0
     i = 1
     while i < len(sys.argv):
