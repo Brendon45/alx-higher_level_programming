@@ -1,4 +1,5 @@
 #include "lists.h"
+void tatatat(void);
 
 /**
  * is_palindrome - is a linked list palindromic ?
@@ -44,3 +45,4 @@ int is_palindrome(listint_t **head)
 		check_i++;
 	}
 	return (1);
+}
