@@ -7,7 +7,9 @@
 
 from models.base import Base
 
+
 class Rectangle(Base):
+
     '''Represents a rectangle'''
 
     # init method
@@ -176,4 +178,7 @@ class Rectangle(Base):
     # magic methods
 
     def __str__(self):
-        return f'[Rectangle] ({self.id}) {self.__x}/{self.__y} - {self.__width}/{self.__height}' 
+        return (
+            f'[Rectangle] ({self.id}) {self.__x}/{self.__y} - '
+            f'{self.__width}/{self.__height}'
+        )
