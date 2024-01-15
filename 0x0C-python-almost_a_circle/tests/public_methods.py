@@ -9,6 +9,7 @@ from unittest.mock import patch
 import io
 from models.rectangle import Rectangle
 
+
 # test class begins
 class TestPublicMethodsRectangle(unittest.TestCase):
     '''Representing a test public method blueprint'''
@@ -21,12 +22,11 @@ class TestPublicMethodsRectangle(unittest.TestCase):
         r = Rectangle(2, 3)
         self.assertEqual(r.area(), 6)
 
-
     # testing display
 
     def test_display(self):
         '''testing for drawing rectangle with #'''
-        
+
         r = Rectangle(2, 5)
         with patch('sys.stdout', new_callable=io.StringIO) as captured:
             r.display()
@@ -46,13 +46,12 @@ class TestPublicMethodsRectangle(unittest.TestCase):
     def test_display_xy_2(self):
         '''test 2: printing rectangle considering x and y values'''
         r = Rectangle(3, 2, 1, 0)
-        
+
         with patch('sys.stdout', new_callable=io.StringIO) as captured:
             r.display()
 
             expected = ' ###\n ###\n'
             self.assertEqual(expected, captured.getvalue())
-
 
     def test_display_incorrect(self):
         '''testing with incorrect class initialization input'''

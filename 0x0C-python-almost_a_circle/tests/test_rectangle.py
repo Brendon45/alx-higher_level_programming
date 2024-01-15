@@ -22,9 +22,9 @@ class TestRectangle(unittest.TestCase):
         self.assertEqual(r1.height, 2)
 
         '''1. testing superclass id'''
-        #r1_id = r1.id
-        #print('r1.id is ', r1.id)
-        #self.assertEqual(r1_id, 1)
+        # r1_id = r1.id
+        # print('r1.id is ', r1.id)
+        # self.assertEqual(r1_id, 1)
 
         '''2. testing initialization again to test id'''
         r2 = Rectangle(2, 10)
@@ -32,8 +32,8 @@ class TestRectangle(unittest.TestCase):
         self.assertEqual(r2.height, 10)
 
         '''3. testing superclass id'''
-        #r2_id = r2.id
-        #self.assertEqual(r2_id, 2)
+        # r2_id = r2.id
+        # self.assertEqual(r2_id, 2)
 
         '''4. testing initialization including x and y'''
         r3 = Rectangle(10, 2, 0, 0, 12)
@@ -43,8 +43,8 @@ class TestRectangle(unittest.TestCase):
         self.assertEqual(r3.y, 0)
 
         '''5. testing superclass id'''
-        #r3_id = r3.id
-        #self.assertEqual(r3_id, 12)
+        # r3_id = r3.id
+        # self.assertEqual(r3_id, 12)
 
     # testing for values
 
@@ -52,7 +52,7 @@ class TestRectangle(unittest.TestCase):
         '''testing initialization of non-int width'''
         with self.assertRaises(TypeError) as e:
             r4 = Rectangle('4', 12)
-        
+
         error_msg = 'width must be an integer'
         self.assertEqual(str(e.exception), error_msg)
 
@@ -126,11 +126,11 @@ class TestRectangle(unittest.TestCase):
         error_msg = 'y must be >= 0'
         self.assertEqual(str(e.exception), error_msg)
 
-
     # testing for setting values with valid and invalid values
 
     # testing for valid input
     def test_set_width(self):
+
         '''testing setting the width'''
         r1 = Rectangle(2, 10)
         r1.width = 2
@@ -154,9 +154,9 @@ class TestRectangle(unittest.TestCase):
         r1.y = 0
         self.assertEqual(r1.y, 0)
 
-    
     # testing for invalid input  # value error
     def test_set_width_invalid(self):
+
         '''testing setting invalid width'''
         r = Rectangle(4, 10)
         with self.assertRaises(ValueError) as e:
@@ -188,9 +188,9 @@ class TestRectangle(unittest.TestCase):
         err_msg = 'y must be >= 0'
         self.assertEqual(str(e.exception), err_msg)
 
-
     # testing for invalid input  # type error
     def test_set_width_invalid_t(self):
+
         '''testing setting invalid width'''
         r = Rectangle(4, 10)
         with self.assertRaises(TypeError) as e:

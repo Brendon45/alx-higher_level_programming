@@ -5,6 +5,7 @@
 import unittest
 from models.rectangle import Rectangle
 
+
 class TestMagicMethodsRectangle(unittest.TestCase):
     '''representing testcases'''
 
@@ -18,10 +19,10 @@ class TestMagicMethodsRectangle(unittest.TestCase):
     def test__str__id(self):
         '''testing str() and print() when no initial id is given'''
         r = Rectangle(3, 4, 0, 1)
-        
+
         expected_return = '[Rectangle] (1) 0/1 - 3/4'
         self.assertEqual(expected_return, str(r))
 
+
 if __name__ == '__main__':
     unittest.main()
-        
