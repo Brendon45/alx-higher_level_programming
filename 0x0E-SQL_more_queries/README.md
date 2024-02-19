@@ -1,10 +1,10 @@
-## 0x0E. SQL - More queries
+# 0x0E. SQL - More queries
 
 ![HELLOO](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/274/66988091.jpg)
 
 ## Requirements
 
-# General
+## General
 
 - Allowed editors: vi, vim, emacs
 - All your files will be executed on Ubuntu 20.04 LTS using MySQL 8.0 (version 8.0.25)
@@ -17,10 +17,12 @@
 
 ## More Info
 
-# Comments for your SQL file:
+## Comments for your SQL file:
 
 $ cat my_script.sql
 -- 3 first students in the Batch ID=3
 -- because Batch 3 is the best!
 SELECT id, name FROM students WHERE batch_id = 3 ORDER BY created_at DESC LIMIT 3;
 $
+
+![YUYTRJ](https://www.codester.com/static/uploads/items/000/021/21656/preview.jpg)
