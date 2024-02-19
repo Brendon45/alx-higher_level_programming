@@ -1,7 +1,8 @@
-## 0x06. Python - Classes and Objects
+# 0x06. Python - Classes and Objects
 
-Requirements
-General
+## Requirements
+
+## General
 Allowed editors: vi, vim, emacs
 All your files will be interpreted/compiled on Ubuntu 20.04 LTS using python3 (version 3.8.5)
 All your files should end with a new line
@@ -14,3 +15,5 @@ All your modules should have a documentation (python3 -c 'print(__import__("my_m
 All your classes should have a documentation (python3 -c 'print(__import__("my_module").MyClass.__doc__)')
 All your functions (inside and outside a class) should have a documentation (python3 -c 'print(__import__("my_module").my_function.__doc__)' and python3 -c 'print(__import__("my_module").MyClass.my_function.__doc__)')
 A documentation is not a simple word, it’s a real sentence explaining what’s the purpose of the module, class or method (the length of it will be verified)
+
+![KDDJJ](https://www.codester.com/static/uploads/items/000/021/21656/preview.jpg)
