@@ -76,3 +76,11 @@ php
 <?php
 echo "Hello, World!";
 ?>
+## AUTHOR
+Brendon Jeje <jejebrendon722@gmail.com>
+
+![BNSNNS](https://www.codester.com/static/uploads/items/000/021/21656/preview.jpg)
+
+## l love python programming
+![PYTHON](https://as1.ftcdn.net/v2/jpg/04/01/34/90/1000_F_401349013_DgwYVo6aNlslJmFGdv7AAANl0DjBo72s.jpg)
+
