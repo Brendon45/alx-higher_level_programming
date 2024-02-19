@@ -1,14 +1,13 @@
 # 0x0D. SQL - Introduction
 
-SQL
-MySQL
+## SQL (Sequence Query Language)
+## MySQL
 
 ![ARONMMU](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/272/rtcwz.jpg)
 
 ## Requirements
 
-# General:
-
+## General:
 - Allowed editors: vi, vim, emacs
 - All your files will be executed on Ubuntu 20.04 LTS using MySQL 8.0 (version 8.0.25)
 - All your files should end with a new line
@@ -20,7 +19,7 @@ MySQL
 
 ## More Info
 
-# Comments for your SQL file:
+## Comments for your SQL file:
 
 $ sudo apt update
 $ sudo apt install mysql-server
@@ -28,3 +27,5 @@ $ sudo apt install mysql-server
 $ mysql --version
 mysql  Ver 8.0.25-0ubuntu0.20.04.1 for Linux on x86_64 ((Ubuntu))
 $
+
+![FFGRH](https://www.codester.com/static/uploads/items/000/021/21656/preview.jpg)
