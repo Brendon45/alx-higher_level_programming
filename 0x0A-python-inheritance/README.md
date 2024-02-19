@@ -1,4 +1,4 @@
-## 0x0A. Python - Inheritance
+# 0x0A. Python - Inheritance
 
 ## Requirements:
 ## Python Scripts
@@ -14,3 +14,5 @@ The length of your files will be tested using wc
 
 ## Documentation
 Do not use the words import or from inside your comments, the checker will think you try to import some modules
+
+![HGFGG](https://www.codester.com/static/uploads/items/000/021/21656/preview.jpg)
