@@ -20,6 +20,7 @@ module.exports = class Rectangle {
       console.log(rect);
     }
   }
+
   rotate () {
     // had to refactor and use a temp to first hold the width before swapping
     const tempSwap = this.width;
