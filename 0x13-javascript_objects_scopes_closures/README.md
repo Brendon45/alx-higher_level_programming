@@ -45,7 +45,6 @@ const r1 = new Rectangle();
 console.log(r1);
 console.log(r1.constructor);
 
-guillaume@ubuntu:~/0x13$ ./0-main.js
 Rectangle {}
 [Class: Rectangle]
 guillaume@ubuntu:~/0x13$
@@ -82,7 +81,6 @@ console.log(r3);
 console.log(r3.width);
 console.log(r3.height);
 
-guillaume@ubuntu:~/0x13$ ./1-main.js
 Rectangle { width: 2, height: 3 }
 2
 3
@@ -92,7 +90,6 @@ Rectangle { width: 2, height: -3 }
 Rectangle { width: 2, height: undefined }
 2
 undefined
-guillaume@ubuntu:~/0x13$
 Repo:
 
 GitHub repository: alx-higher_level_programming
@@ -132,7 +129,6 @@ console.log(r4);
 console.log(r4.width);
 console.log(r4.height);
 
-guillaume@ubuntu:~/0x13$ ./2-main.js
 Rectangle { width: 2, height: 3 }
 2
 3
@@ -145,7 +141,6 @@ undefined
 Rectangle {}
 undefined
 undefined
-guillaume@ubuntu:~/0x13$
 Repo:
 
 GitHub repository: alx-higher_level_programming
@@ -172,7 +167,7 @@ r1.print();
 const r2 = new Rectangle(10, 5);
 r2.print();
 
-guillaume@ubuntu:~/0x13$ ./3-main.js
+output:
 XX
 XX
 XX
@@ -216,7 +211,7 @@ console.log('Rotate:');
 r1.rotate();
 r1.print();
 
-guillaume@ubuntu:~/0x13$ ./4-main.js
+output:
 Normal:
 XX
 XX
@@ -233,7 +228,6 @@ XXXXXX
 XXXXXX
 XXXXXX
 XXXXXX
-guillaume@ubuntu:~/0x13$
 Repo:
 
 GitHub repository: alx-higher_level_programming
@@ -256,7 +250,7 @@ s1.print();
 s1.double();
 s1.print();
 
-guillaume@ubuntu:~/0x13$ ./5-main.js
+./5-main.js
 XXXX
 XXXX
 XXXX
@@ -269,7 +263,6 @@ XXXXXXXX
 XXXXXXXX
 XXXXXXXX
 XXXXXXXX
-guillaume@ubuntu:~/0x13$
 Repo:
 
 GitHub repository: alx-higher_level_programming
@@ -292,7 +285,7 @@ s1.charPrint();
 
 s1.charPrint('C');
 
-guillaume@ubuntu:~/0x13$ ./6-main.js
+./6-main.js
 XXXX
 XXXX
 XXXX
@@ -301,7 +294,6 @@ CCCC
 CCCC
 CCCC
 CCCC
-guillaume@ubuntu:~/0x13$
 Repo:
 
 GitHub repository: alx-higher_level_programming
@@ -321,11 +313,10 @@ console.log(nbOccurences([1, 2, 3, 4, 5, 6], 3));
 console.log(nbOccurences([3, 2, 3, 4, 5, 3, 3], 3));
 console.log(nbOccurences(["S", 12, "c", "S", "School", 8], "S"));
 
-guillaume@ubuntu:~/0x13$ ./7-main.js
+./7-main.js
 1
 4
 2
-guillaume@ubuntu:~/0x13$
 Repo:
 
 GitHub repository: alx-higher_level_programming
@@ -345,10 +336,9 @@ const esrever = require('./8-esrever').esrever;
 console.log(esrever([1, 2, 3, 4, 5]));
 console.log(esrever(["School", 89, { id: 12 }, "String"]));
 
-guillaume@ubuntu:~/0x13$ ./8-main.js
+./8-main.js
 [ 5, 4, 3, 2, 1 ]
 [ 'String', { id: 12 }, 89, 'School' ]
-guillaume@ubuntu:~/0x13$
 Repo:
 
 GitHub repository: alx-higher_level_programming
@@ -361,7 +351,7 @@ Write a function that prints the number of arguments already printed and the new
 
 Prototype: exports.logMe = function (item)
 Output format: <number arguments already printed>: <current argument value>
-guillaume@ubuntu:~/0x13$ cat 9-main.js
+cat 9-main.js
 #!/usr/bin/node
 const logMe = require('./9-logme').logMe;
 
@@ -369,11 +359,10 @@ logMe("Hello");
 logMe("Best");
 logMe("School");
 
-guillaume@ubuntu:~/0x13$ ./9-main.js
+./9-main.js
 0: Hello
 1: Best
 2: School
-guillaume@ubuntu:~/0x13$
 Repo:
 
 GitHub repository: alx-higher_level_programming
@@ -404,16 +393,83 @@ console.log(myConverter(2));
 console.log(myConverter(12));
 console.log(myConverter(89));
 
-guillaume@ubuntu:~/0x13$ ./10-main.js
+./10-main.js
 2
 12
 89
 2
 c
 59
-guillaume@ubuntu:~/0x13$
 Repo:
 
 GitHub repository: alx-higher_level_programming
 Directory: 0x13-javascript_objects_scopes_closures
 File: 10-converter.js
+
+## TASK 11
+
+Write a script that imports an array and computes a new array.
+
+Your script must import list from the file 100-data.js
+You must use a map. Tips
+A new list must be created with each value equal to the value of the initial list, multipled by the index in the list
+Print both the initial list and the new list
+cat 100-data.js
+#!/usr/bin/node
+exports.list = [1, 2, 3, 4, 5];
+guillaume@ubuntu:~/0x13$ ./100-map.js
+[ 1, 2, 3, 4, 5 ]
+[ 0, 2, 6, 12, 20 ]
+Repo:
+
+GitHub repository: alx-higher_level_programming
+Directory: 0x13-javascript_objects_scopes_closures
+File: 100-map.js
+
+## TASK 12
+
+Write a script that imports a dictionary of occurrences by user id and computes a dictionary of user ids by occurrence.
+
+Your script must import dict from the file 101-data.js
+In the new dictionary:
+A key is a number of occurrences
+A value is the list of user ids
+Print the new dictionary at the end
+guillaume@ubuntu:~/0x13$ cat 101-data.js
+#!/usr/bin/node
+exports.dict = {
+  89: 1,
+  90: 2,
+  91: 1,
+  92: 3,
+  93: 1,
+  94: 2
+};
+./101-sorted.js
+{ '1': [ '89', '91', '93' ], '2': [ '90', '94' ], '3': [ '92' ] }
+Repo:
+
+GitHub repository: alx-higher_level_programming
+Directory: 0x13-javascript_objects_scopes_closures
+File: 101-sorted.js
+
+## TASK 13
+
+Write a script that concats 2 files.
+
+The first argument is the file path of the first source file
+The second argument is the file path of the second source file
+The third argument is the file path of the destination
+cat fileA
+C is fun!
+cat fileB
+Python is Cool!!!
+./102-concat.js fileA fileB fileC
+cat fileC
+C is fun!
+Python is Cool!!!
+Repo:
+
+GitHub repository: alx-higher_level_programming
+Directory: 0x13-javascript_objects_scopes_closures
+File: 102-concat.js
