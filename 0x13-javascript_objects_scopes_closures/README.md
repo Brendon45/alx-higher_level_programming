@@ -37,7 +37,8 @@ Read or watch:
 Write an empty class Rectangle that defines a rectangle:
 
 You must use the class notation for defining your class
-guillaume@ubuntu:~/0x13$ cat 0-main.js
+
+cat 0-main.js
 #!/usr/bin/node
 const Rectangle = require('./0-rectangle');
 
@@ -47,11 +48,12 @@ console.log(r1.constructor);
 
 Rectangle {}
 [Class: Rectangle]
-guillaume@ubuntu:~/0x13$
 Repo:
 
 GitHub repository: alx-higher_level_programming
+
 Directory: 0x13-javascript_objects_scopes_closures
+
 File: 0-rectangle.js
 
 ## TASK 1
@@ -93,7 +95,9 @@ undefined
 Repo:
 
 GitHub repository: alx-higher_level_programming
+
 Directory: 0x13-javascript_objects_scopes_closures
+
 File: 1-rectangle.js
 
 ## TASK 2
@@ -144,7 +148,9 @@ undefined
 Repo:
 
 GitHub repository: alx-higher_level_programming
+
 Directory: 0x13-javascript_objects_scopes_closures
+
 File: 2-rectangle.js
 
 ## TASK 3
@@ -156,8 +162,9 @@ The constructor must take 2 arguments: w and h
 Initialize the instance attribute width with the value of w
 Initialize the instance attribute height with the value of h
 If w or h is equal to 0 or not a positive integer, create an empty object
-Create an instance method called print() that prints the rectangle using the character X
-guillaume@ubuntu:~/0x13$ cat 3-main.js
+Create an instance method called print() that prints the rectangle using the character 
+
+cat 3-main.js
 #!/usr/bin/node
 const Rectangle = require('./3-rectangle');
 
@@ -176,11 +183,12 @@ XXXXXXXXXX
 XXXXXXXXXX
 XXXXXXXXXX
 XXXXXXXXXX
-guillaume@ubuntu:~/0x13$
 Repo:
 
 GitHub repository: alx-higher_level_programming
+
 Directory: 0x13-javascript_objects_scopes_closures
+
 File: 3-rectangle.js
 
 ## TASK 4
@@ -195,7 +203,8 @@ If w or h is equal to 0 or not a positive integer, create an empty object
 Create an instance method called print() that prints the rectangle using the character X
 Create an instance method called rotate() that exchanges the width and the height of the rectangle
 Create an instance method called double() that multiples the width and the height of the rectangle by 2
-guillaume@ubuntu:~/0x13$ cat 4-main.js
+
+cat 4-main.js
 #!/usr/bin/node
 const Rectangle = require('./4-rectangle');
 
@@ -231,7 +240,9 @@ XXXXXX
 Repo:
 
 GitHub repository: alx-higher_level_programming
+
 Directory: 0x13-javascript_objects_scopes_closures
+
 File: 4-rectangle.js
 
 ## TASK 5
@@ -241,7 +252,8 @@ Write a class Square that defines a square and inherits from Rectangle of 4-rect
 You must use the class notation for defining your class and extends
 The constructor must take 1 argument: size
 The constructor of Rectangle must be called (by using super())
-guillaume@ubuntu:~/0x13$ cat 5-main.js
+
+cat 5-main.js
 #!/usr/bin/node
 const Square = require('./5-square');
 
@@ -251,6 +263,7 @@ s1.double();
 s1.print();
 
 ./5-main.js
+
 XXXX
 XXXX
 XXXX
@@ -266,7 +279,9 @@ XXXXXXXX
 Repo:
 
 GitHub repository: alx-higher_level_programming
+
 Directory: 0x13-javascript_objects_scopes_closures
+
 File: 5-square.js
 
 ## TASK 6
@@ -276,7 +291,8 @@ Write a class Square that defines a square and inherits from Square of 5-square.
 You must use the class notation for defining your class and extends
 Create an instance method called charPrint(c) that prints the rectangle using the character c
 If c is undefined, use the character X
-guillaume@ubuntu:~/0x13$ cat 6-main.js
+
+cat 6-main.js
 #!/usr/bin/node
 const Square = require('./6-square');
 
@@ -286,6 +302,7 @@ s1.charPrint();
 s1.charPrint('C');
 
 ./6-main.js
+
 XXXX
 XXXX
 XXXX
@@ -294,10 +311,13 @@ CCCC
 CCCC
 CCCC
 CCCC
+
 Repo:
 
 GitHub repository: alx-higher_level_programming
+
 Directory: 0x13-javascript_objects_scopes_closures
+
 File: 6-square.js
 
 ## TASK 7
@@ -305,7 +325,8 @@ File: 6-square.js
 Write a function that returns the number of occurrences in a list:
 
 Prototype: exports.nbOccurences = function (list, searchElement)
-guillaume@ubuntu:~/0x13$ cat 7-main.js
+
+cat 7-main.js
 #!/usr/bin/node
 const nbOccurences = require('./7-occurrences').nbOccurences;
 
@@ -320,7 +341,9 @@ console.log(nbOccurences(["S", 12, "c", "S", "School", 8], "S"));
 Repo:
 
 GitHub repository: alx-higher_level_programming
+
 Directory: 0x13-javascript_objects_scopes_closures
+
 File: 7-occurrences.js
 
 ## TASK 8
@@ -329,7 +352,8 @@ Write a function that returns the reversed version of a list:
 
 Prototype: exports.esrever = function (list)
 You are not allow to use the built-in method reverse
-guillaume@ubuntu:~/0x13$ cat 8-main.js
+
+cat 8-main.js
 #!/usr/bin/node
 const esrever = require('./8-esrever').esrever;
 
@@ -339,10 +363,13 @@ console.log(esrever(["School", 89, { id: 12 }, "String"]));
 ./8-main.js
 [ 5, 4, 3, 2, 1 ]
 [ 'String', { id: 12 }, 89, 'School' ]
+
 Repo:
 
 GitHub repository: alx-higher_level_programming
+
 Directory: 0x13-javascript_objects_scopes_closures
+
 File: 8-esrever.js
 
 ## TASK 9
@@ -366,7 +393,9 @@ logMe("School");
 Repo:
 
 GitHub repository: alx-higher_level_programming
+
 Directory: 0x13-javascript_objects_scopes_closures
+
 File: 9-logme.js
 
 ## TASK 10
@@ -376,7 +405,8 @@ Write a function that converts a number from base 10 to another base passed as a
 Prototype: exports.converter = function (base)
 You are not allowed to import any file
 You are not allowed to declare any new variable (var, let, etc..)
-guillaume@ubuntu:~/0x13$ cat 10-main.js
+
+cat 10-main.js
 #!/usr/bin/node
 const converter = require('./10-converter').converter;
 
@@ -394,16 +424,20 @@ console.log(myConverter(12));
 console.log(myConverter(89));
 
 ./10-main.js
+
 2
 12
 89
 2
 c
 59
+
 Repo:
 
 GitHub repository: alx-higher_level_programming
+
 Directory: 0x13-javascript_objects_scopes_closures
+
 File: 10-converter.js
 
 ## TASK 11
@@ -417,13 +451,18 @@ Print both the initial list and the new list
 cat 100-data.js
 #!/usr/bin/node
 exports.list = [1, 2, 3, 4, 5];
-guillaume@ubuntu:~/0x13$ ./100-map.js
+
+./100-map.js
+
 [ 1, 2, 3, 4, 5 ]
 [ 0, 2, 6, 12, 20 ]
+
 Repo:
 
 GitHub repository: alx-higher_level_programming
+
 Directory: 0x13-javascript_objects_scopes_closures
+
 File: 100-map.js
 
 ## TASK 12
@@ -435,7 +474,9 @@ In the new dictionary:
 A key is a number of occurrences
 A value is the list of user ids
 Print the new dictionary at the end
-guillaume@ubuntu:~/0x13$ cat 101-data.js
+
+cat 101-data.js
+
 #!/usr/bin/node
 exports.dict = {
   89: 1,
@@ -445,12 +486,16 @@ exports.dict = {
   93: 1,
   94: 2
 };
+
 ./101-sorted.js
 { '1': [ '89', '91', '93' ], '2': [ '90', '94' ], '3': [ '92' ] }
+
 Repo:
 
 GitHub repository: alx-higher_level_programming
+
 Directory: 0x13-javascript_objects_scopes_closures
+
 File: 101-sorted.js
 
 ## TASK 13
@@ -464,12 +509,17 @@ cat fileA
 C is fun!
 cat fileB
 Python is Cool!!!
+
 ./102-concat.js fileA fileB fileC
+
 cat fileC
 C is fun!
 Python is Cool!!!
+
 Repo:
 
 GitHub repository: alx-higher_level_programming
+
 Directory: 0x13-javascript_objects_scopes_closures
+
 File: 102-concat.js
