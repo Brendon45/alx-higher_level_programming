@@ -1,8 +1,6 @@
 #!/usr/bin/node
 //  Prints all characters of a Star Wars movie
 
-#!/usr/bin/node
-
 const request = require('request');
 
 // Construct the SWAPI URL based on the film ID from the command line arguments
